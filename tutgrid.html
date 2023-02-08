@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets learn about grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .items-{
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            padding: 1rem;
+            
+        }
+        .items-:first-child{
+            display: flex;
+            /* grid-column: 2 /span 3;
+            grid-row: 4 /span -4; */
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <sec class="grid">
+
+        <div class="items-">this ia a box-1</div>
+        <div class="items-">this ia a box-2</div>
+        <div class="items-">this ia a box-3</div>
+        <div class="items-">this ia a box-4</div>
+        <div class="items-">this ia a box-5</div>
+        <div class="items-">this ia a box-6</div>
+        <div class="items-">this ia a box-7</div>
+        <div class="items-">this ia a box-8</div>
+        <div class="items-">this ia a box-9</div>
+        <div class="items-">this ia a box-10</div>
+    </sec>
+</body>
+</html>

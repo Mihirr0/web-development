@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makng a basic template</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: black;
+            /* opacity: 0.4; */
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            /* top:0;
+            left: 0; */
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navbar {
+            display: flex;
+            text-decoration: none;
+            /* border: 3px solid rgb(54, 50, 50);
+            background-color: rgb(54, 50, 50); */
+            width: 1000px;
+            margin: 0px;
+            border-radius: 23px;
+            color: white;
+        }
+a{ color:white;}
+        li {
+            list-style: none;
+            padding: 10px 30px;
+        }
+h1{font-size: 50px;}
+        section {
+            /* border: grey 2px solid; */
+            display: flex;
+
+            margin: auto;
+            width: 100vw;
+            /* align-items: center; */
+            flex-direction: column;
+            justify-content: center;
+            /* width: 900px; */
+            height: 340px;
+text-align: center;
+        }
+        hr{ z-index: -1;}
+        header::after{
+           content: " let see in which row it comes";
+justify-content: center;
+/* align-items: center; */
+display:flex ;
+        }
+        input[type='button']{
+            display: block;
+            margin: auto;
+                text-align: center;
+                background-color: hotpink;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul class="navbar">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">contact us</a> </li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1>this is main heading</h1> <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut accusamus omnis aut soluta tempora aperiam
+            maiores autem dolorem consectetur provident recusandae, distinctio aliquam rem id atque aliquid magnam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque possimus hic id explicabo, in perspiciatis error libero aut omnis non rem vitae tenetur fugit, autem deleniti minus nisi repellendus culpa.
+            incidunt odio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis numquam error aliquam
+            autem illum ipsum sunt molestias ullam sed impedit cupiditate neque maxime, dolor hic, sapiente ducimus
+            harum perspiciatis explicabo. </p> <hr>
+        </section>
+        <input type="button" value="submit">
+
+</body>
+
+</html>

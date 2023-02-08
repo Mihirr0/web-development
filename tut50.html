@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                <script>
+                    var str="this is a string";
+                    console.log(str);
+
+                    var position= str.indexOf('is');
+                    console.log(position)
+
+                    position =str.lastIndexOf('is');
+                    console.log(position)
+
+                    // var substr=str.slice(1,7);
+                    var substr1=str.substring(0,3)
+                    console.log(substr1)
+
+                    var replaced=str.replace('string','harry');
+                    console.log(replaced)
+                    var char2=str.charAt(3);
+                    console.log(char2)
+                    // let a="u"
+                    // {
+                    //     let a="miihir"
+                    //     console.log(a)
+                    // }
+                    // console.log(a)
+
+                    const a="this cannot be changed";
+                    // a="i want to change this but i can't";
+                                console.log(a);
+                                
+        // let names = [1, 2, 4, "Harry", undefined];
+        let names = new Array(41, 2, 4, "Harry", undefined);
+        // let names = new Array(23);
+        console.log(names.length);
+        names = names.sort();
+        names.push("this is pushed");
+        console.log(names);
+         let employee = {
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+            "channel 2": "ProgrammingWithHarry",
+        }
+        console.log(employee);
+                </script>
+</body>
+</html>

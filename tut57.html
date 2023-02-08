@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>this what i am doing</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus praesentium rerum accusamus,
+            nobis consectetur asperiores quo obcaecati quasi mollitia iusto aliquid, tempora, aliquam fuga et veritatis
+            at tempore. Architecto, quasi quod error cumque quis praesentium beatae fuga blanditiis minus animi
+            deserunt, voluptas ipsam consequatur sunt. Vel temporibus reprehenderit aspernatur iste dolorem non labore
+            quibusdam fuga modi a accusamus autem possimus est quod ab, deserunt nisi fugiat quos beatae molestias
+            doloremque perferendis. Officia, consectetur! Repellendus magni beatae expedita recusandae, dolorem porro
+            eligendi eum delectus, ea omnis exercitationem ipsam ipsum odio. Natus ipsum tempora eveniet id ullam
+            pariatur incidunt eaque quos.</p>
+
+    </div>
+    <div>
+        <button id="btn" onclick="togglehide()">show more</button></div>
+    <script>
+        let para = document.getElementById('para');
+        function togglehide() {
+            // let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

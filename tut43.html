@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    .grid{
+        display: grid;
+        grid-gap: .2rem;
+        grid-template-areas: 'navbar navbar navbar navbar navbar'
+        'sec sec sec sec aside'
+        ' footer footer footer footer footer' ;
+    }
+.item{
+    border: black 2px solid;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+#sec{ 
+    grid-area: sec;
+}
+#navbar{
+    grid-area: navbar;
+}
+#aside{ 
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="grid">
+
+        <div class="item" id="navbar">
+            home     services      aboout us    contact us  
+        </div>
+        <div class="item" id="sec">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum expedita laboriosam iusto at cum sed architecto repellendus autem velit amet veniam magni maxime aliquam animi recusandae quia reiciendis sunt nesciunt perferendis corrupti sit, temporibus veritatis cumque? Qui minus cumque ratione excepturi amet veritatis odio consequuntur dolorem! Possimus sequi iusto am officia esse architecto deserunt iste unde, consectetur omnis est natus? Consequuntur, perspiciatis. Aperiam nisi quia accusamus fugit quis? Eius culpa odit beatae fugiat placeat, cupiditate veniam! Obcaecati quidem reprehenderit commodi dolorum harum autem nam iste minus. Quam magnam reiciendis ducimus deleniti culpa, exercitationem iure officiis expedita. A commodi reprehenderit deleniti ipsa modi veritatis dolore nobis necessitatibus eum. Non ratione id sequi natus et cum eaque fugiat veritatis reprehenderit labore illo voluptates, eligendi quia eos odio voluptate! Eligendi, temporibus. Reiciendis nesciunt quia deserunt modi expedita?</div>
+        <div class="item" id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae, qui nesciunt impedit corrupti cum officiis maxime! Consectetur praesentium maxime distinctio deleniti eaque dolorum tempore aut, commodi voluptatem cupiditate consequuntur? Repellat, iure impedit. Quas repudiandae recusandae ipsam. Molestiae ut, soluta perspiciatis excepturi similique aliquam me, impedit nulla sequi exercitationem error praesentium adipisci nostrum qui odio quo quidem? Facere atque nesciunt adipisci? Deleniti excepturi facilis, neque recusandae unde iure quo tempore a expedita! Aliquid a dignissimos, cumque impedit ipsa dicta soluta eos veritatis assumenda facilis odit in? Deserunt recusandae vitae, distinctio a voluptatum est eos aliquid officiis ad accusantium eligendi magnam. m beatae totam veritatis.</div>
+        <div id="footer" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officiis?</div>
+    </div>
+    </body>
+    </html>
